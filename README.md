@@ -40,22 +40,6 @@ The **Notesheet Tracker** is a comprehensive platform designed to streamline the
 
 ---
 
-## Login Credentials and User Roles
-
-To access the system, use the following login credentials:
-
--   **Username**: `gensectech@iitp.ac.in`
--   **Password**: `qwertTyuio@p12345`
-
-Upon logging in as the **General Secretary (GenSec)**, the user will have the following roles and permissions:
-
--   **Reject Notesheet**: GenSec has the authority to reject raised notesheets for different technical clubs, providing comments on the rejection.
--   **Approve Notesheet for Further Approval**: GenSec can approve notesheets for further processing by forwarding them to the next level in the approval chain.
-
--   **Raise Notesheets**: GenSec can create and submit notesheets (Reimbursement, Disbursement, and Settlement) for their respective clubs or fests.
-
----
-
 ## Installation Guide
 
 To set up the project, install all dependencies from the root directory:
@@ -111,8 +95,31 @@ This starts both the client and server in a production environment.
 
 ---
 
-## Temporary Link
+## Demo
 
-Since the application is in the testing stage, you can access it temporarily at:
+Below are screenshots showcasing the roles and responsibilities of different users in the **Notesheet Tracker** workflow. Each image links to the corresponding video demo for more details.
 
-**[http://testing-notesheet-tracker.example.com](http://testing-notesheet-tracker.example.com)**
+### 1. User POV
+
+[![User POV](demo/user.png)](https://drive.google.com/file/d/1aKb41pOznM3RUklQKj3pEbA0u_BmjQOp/view?usp=sharing)  
+_Click the image to watch the demo._
+
+The user logs in using Microsoft OAuth and accesses their dashboard to view all previously raised notesheets. The demo highlights how the user raises a new notesheet, which enters the approval workflow starting with the PIC.
+
+---
+
+### 2. PIC POV
+
+[![PIC POV](demo/pic.png)](https://drive.google.com/file/d/13pU6N0UpKEzw35U8tpzjjOeqSbTyBR3g/view?usp=sharing)  
+_Click the image to watch the demo._
+
+The Payment In Charge (PIC) logs in using their email and password (JWT authentication). The demo shows how the PIC reviews pending notesheets, approves the recently raised notesheet, and adds their signature to the PDF.
+
+---
+
+### 3. ADean POV
+
+[![ADean POV](demo/adean.png)](https://drive.google.com/file/d/1ytr6IJjRNMNwru59bdF5ybZQOfhSXIuz/view?usp=sharing)  
+_Click the image to watch the demo._
+
+The Associate Dean (ADean) logs in to approve notesheets that have already been reviewed by the PIC. In this demo, the ADean approves the notesheet, marking it as passed for funds, completing the approval process.
